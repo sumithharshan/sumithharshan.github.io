@@ -449,7 +449,9 @@
 }
 .sgem-cal-1 .sgem-form-group label, .sgem-cal-1 input[type="text"], 
 .sgem-cal-1-result .sgem-result-panel-header, .sgem-percentage-note, [data-tippy-root], 
-.sgem-cal-1 summary, .sgem-logo-center {
+.sgem-cal-1 summary, .sgem-logo-center,
+.sgem-cal-1 .sgem-form-flex.sgem-currency-holder::after,
+.sgem-cal-1 .sgem-form-flex.sgem-years-holder::before {
 		font-family: 'DM Sans', sans-serif;
 }
 .sgem-cal-1 input[type="text"] { 
