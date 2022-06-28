@@ -144,7 +144,7 @@
     background-repeat: no-repeat;
     background-position: center -5px;
     background-size: 25px;
-    background-image: url("/wp-content/plugins/sgem-investment-cal/assets/images/caret-down-filled.svg");
+    background-image: url("../images/caret-down-filled.svg");
 }
 .sgem-cal-1 details[open] > summary::after {
     -moz-transform: rotate(-180deg);
@@ -443,7 +443,9 @@
 .tippy-box[data-theme~="sgem-goal"][data-placement^="right"] > .tippy-arrow::before {
     border-right-color: #fff;
 }
-.sgem-cal-1 .sgem-form-group label, .sgem-cal-1 input[type="text"], .sgem-cal-1-result .sgem-result-panel-header, .sgem-percentage-note, [data-tippy-root], .sgem-cal-1 summary {
+.sgem-cal-1 .sgem-form-group label, .sgem-cal-1 input[type="text"], 
+.sgem-cal-1-result .sgem-result-panel-header, .sgem-percentage-note, [data-tippy-root], 
+.sgem-cal-1 summary, .sgem-logo-center {
 		font-family: 'DM Sans', sans-serif;
 }
 .sgem-cal-1 input[type="text"] { 
