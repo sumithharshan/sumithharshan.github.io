@@ -19,7 +19,7 @@ var sgem_main_contents = '<div class="sgem-cal-wrapper">' +
 		'<label>Current savings I have <span class="sgem-tooltip tooltip" data-tippy-content="If you\’re married, include your spouse\’s income and total savings.">?</span></label>' +
 		'<input type="text" class="inputmove inputnumber"  id="sgem_current_savings" value="30,000" min="0" max="50000000" onkeypress="return isNumber(event)"/>' +
 			'<span class="sgem-err-msg-current"></span></div></div>'+
-	'<div class="sgem-flex-container">'+
+	'<div class="sgem-flex-container">'+ 
 	'<div class="sgem-form-group sgem-form-flex sgem-currency-holder">'+
 	'<label>Every month I save <span class="sgem-tooltip tooltip" data-tippy-content="Count any matching dollars your employer provides. A good savings target: 10% to start, gradually building to 15% or more.">?</span></label>'+
 	'<input type="text" class="inputmove inputnumber"  id="sgem_monthly_saving" value="500" min="0" max="100000" onkeypress="return isNumber(event)"/>'+
@@ -76,9 +76,8 @@ var sgem_main_contents = '<div class="sgem-cal-wrapper">' +
       '<div class="sgem-logo-center">Retirement calculator by'+
         '<a class="sgem-logo-image" href="https://retirementinvestments.com/" target="_blank" rel="noopener">'+
       '<img src="/wp-content/plugins/sgem-investment-cal/assets/images/Retirement-Investments-8.png" alt="Retirement calculator Logo" /></a></div></div></div></div>';    
-
-
-$(function () {$('#sgem-retirement-cal-main-id').html(sgem_main_contents);tippy('.sgem-goal-tooltip', {animation: 'sacle',boundary: 'viewport',allowHTML: true,arrow: true,placement: 'top',size:'large',theme: 'sgem-goal',trigger: 'click',  });
+ 
+ $(function () {$('#sgem-retirement-cal-main-id').html(sgem_main_contents);tippy('.sgem-goal-tooltip', {animation: 'sacle',boundary: 'viewport',allowHTML: true,arrow: true,placement: 'top',size:'large',theme: 'sgem-goal',trigger: 'click',  });
 ///===================================================	
   if($('#sgem_pretax_income').length > 0) {
     $('#sgem_pretax_income').on('keyup', function () {
@@ -582,5 +581,4 @@ var current_age     = $('#sgem_age').val().trim();
   messageBox.innerHTML= message;
   
 }
-
 
