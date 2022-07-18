@@ -5,8 +5,10 @@
    document.head.appendChild(sgemj);
  } 
 //}
- setTimeout(
+ setTimeout(runCal, 2000);
+
+function runCal(){
    var sgemjs = document.createElement('script');
    sgemjs.setAttribute('src','https://sumithharshan.github.io/sgem-investment-cal/assets/js/e-cal-scripts-min-all.js');
    document.body.appendChild(sgemjs);
-, 2000);
+}
