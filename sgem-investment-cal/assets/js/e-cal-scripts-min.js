@@ -612,8 +612,5 @@ var current_age     = $('#sgem_age').val().trim();
   //var messageBox = document.getElementById('message');
   	//messageBox.innerHTML= message;
   
-}
-
-     
-
+} 
  
